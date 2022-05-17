@@ -1,12 +1,20 @@
 import './App.css';
 import { Portals } from './components'
-{/* <Grid key={product.id} item xs={12} sm={6} md={4} lg={3}> */}
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <Portals/>
-    </div>
+    <ThemeProvider theme={darkTheme}>
+      <div className="App">
+        <Portals/>
+      </div>
+    </ThemeProvider>
   );
 }
 
