@@ -1,6 +1,6 @@
 [  
-  {"title":"Atemosta Home", "description":"Welcome to the Tempest."},  
-  {"title":"Immria", "description":"Engrave your name into the metaverse with NFTs."},
-  {"title":"Myujen", "description":"Buy and Sell 3D NFTs via the Polygon Network."},
-  {"title":"Tolbana", "description":"Buy and sell physical goods anonymously with cryptocurrency."}
+  {"title":"Atemosta Home", "description":"Welcome to the Tempest.", "url":"https://atemosta.com/"},  
+  {"title":"Immria", "description":"Engrave your name into the metaverse with NFTs", "url": "https://immria.com/"},
+  {"title":"Myujen", "description":"Buy and Sell 3D NFTs via the Polygon Network.", "url": "https://atemosta.com/projects/myujen/"},
+  {"title":"Tolbana", "description":"Buy and sell physical goods anonymously with cryptocurrency.", "url": "https://atemosta.com/projects/tolbana/"}
 ]  
