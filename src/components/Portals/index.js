@@ -6,10 +6,13 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
+import projects from './data.json'
 
-const MediaCard = ({title}) => {
+const imgs = {};
+
+const MediaCard = ({project}) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ minHeight: 260, maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="140"
@@ -18,42 +21,31 @@ const MediaCard = ({title}) => {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {title}
+          {project.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {project.description}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button 
-          size="medium" 
-          variant="contained"
-          disableSpacing={true}
-        >
-          Enter
-        </Button>
-      </CardActions>
     </Card>
   );
 }
 
 export default function BasicGrid() {
+  // Create Img URLs Descriptions
+  imgs["key1"] = "value1";
+  imgs["key1"] = "value1";
+  imgs["key1"] = "value1";
+  imgs["key1"] = "value1";
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <MediaCard title={"Atemosta Home"}/>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <MediaCard title={"Immria"}/>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <MediaCard title={"Myujen"}/>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <MediaCard title={"Tolbana"}/>
-        </Grid>
+        {projects.map((project) => (
+          <Grid item xs={12} sm={6} md={4} lg={3}>
+            <MediaCard project={project}/>
+          </Grid>
+        ))}
       </Grid>
     </Box>
   );
