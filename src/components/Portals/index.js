@@ -8,16 +8,25 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import projects from './data.json'
 
+// Import Local Images
+import imgAtemosta from '../../assets/atemosta.png'
+import imgImmria from '../../assets/immria.png'
+import imgMyujen from '../../assets/myujen.png'
+import imgTolbana from '../../assets/tolbana.png'
+
 const imgs = {};
 
 const MediaCard = ({project}) => {
   return (
-    <Card sx={{ minHeight: 260, maxWidth: 345 }}>
+    <Card 
+    sx={{ minHeight: 260, maxWidth: 345 }}
+    onClick={() => console.log(project.title) }
+    >
       <CardMedia
         component="img"
         height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt={"test bio"}
+        image={imgs[project.title]}
+        alt={project.title}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -33,10 +42,10 @@ const MediaCard = ({project}) => {
 
 export default function BasicGrid() {
   // Create Img URLs Descriptions
-  imgs["key1"] = "value1";
-  imgs["key1"] = "value1";
-  imgs["key1"] = "value1";
-  imgs["key1"] = "value1";
+  imgs["Atemosta Home"] = imgAtemosta;
+  imgs["Immria"] = imgImmria;
+  imgs["Myujen"] = imgMyujen;
+  imgs["Tolbana"] = imgTolbana;
 
   return (
     <Box sx={{ flexGrow: 1 }}>
