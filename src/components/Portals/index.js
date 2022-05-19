@@ -48,6 +48,15 @@ export default function BasicGrid() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
+      <center>
+        <Typography variant="h3" gutterBottom color="text.secondary">
+          <b>🌀 Welcome to the Atemosta Portal Home 🌀</b>
+        </Typography>
+        <Typography variant="h4" gutterBottom color="text.secondary">
+          <i>Where would you like to go next?</i> ➡️
+        </Typography>
+        <br/>
+      </center>
       <Grid container spacing={2}>
         {projects.map((project) => (
           <Grid item xs={12} sm={6} md={4} lg={3}>
