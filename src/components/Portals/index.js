@@ -50,7 +50,7 @@ export default function BasicGrid() {
     <Box sx={{ flexGrow: 1 }}>
       <center>
         <Typography variant="h3" gutterBottom color="text.secondary">
-          <b>🌀 Welcome to the Atemosta Portal Home 🌀</b>
+          <b>🌀 Welcome to Atemosta's Portal Realm 🌀</b>
         </Typography>
         <Typography variant="h4" gutterBottom color="text.secondary">
           <i>Where would you like to go next?</i> ➡️
