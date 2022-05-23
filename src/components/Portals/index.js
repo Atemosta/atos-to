@@ -42,7 +42,7 @@ const MediaCard = ({project}) => {
 export default function BasicGrid() {
   // Create Img URLs Descriptions
   imgs["Atemosta Home"] = imgAtemosta;
-  imgs["Immria"] = imgImmria;
+  imgs["Immria (Novus)"] = imgImmria;
   imgs["Myujen"] = imgMyujen;
   imgs["Tolbana"] = imgTolbana;
 
