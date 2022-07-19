@@ -9,6 +9,7 @@ import projects from './data.json'
 // Import Local Images
 import imgAtemosta from '../../assets/atemosta.png'
 import imgBrock from '../../assets/brock.png'
+import imgGitHub from '../../assets/github.jpeg'
 import imgImmria from '../../assets/monument-of-life.jpeg'
 import imgMyujen from '../../assets/myujen.png'
 import imgTolbana from '../../assets/tolbana.png'
@@ -42,9 +43,10 @@ const MediaCard = ({project}) => {
 
 export default function BasicGrid() {
   // Create Img URLs Descriptions
-  imgs["Atemosta Home"] = imgAtemosta;
+  imgs["Blog"] = imgAtemosta;
   imgs["Brock Climb WebVR"] = imgBrock;
-  imgs["Monument of Life (Immria)"] = imgImmria;
+  imgs["GitHub Organization"] = imgGitHub;
+  imgs["Immria: The Monument of Life"] = imgImmria;
   imgs["Myujen"] = imgMyujen;
   imgs["Tolbana"] = imgTolbana;
 
