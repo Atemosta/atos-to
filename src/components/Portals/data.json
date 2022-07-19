@@ -1,5 +1,6 @@
 [  
-  {"title":"Atemosta Home", "description":"Weekly newsletter and monthly project updates", "url":"https://blog.atemosta.com/"},  
-  {"title":"Monument of Life (Immria)", "description":"Engrave your name into the metaverse with exclusive Immria NFTs", "url": "https://immria.atemosta.com/monument-of-life/index.html"},
-  {"title":"Brock Climb WebVR", "description":"Fantasy inspired rock climbing WebVR experience", "url": "https://wonderland.atemosta.com/brock/index.html"}
+  {"title":"Blog", "description":"Monthly newsletter and weekly project updates", "url":"https://blog.atemosta.com/"},  
+  {"title":"Brock Climb WebVR", "description":"Fantasy inspired rock climbing WebVR experience", "url": "https://wonderland.atemosta.com/brock/index.html"},
+  {"title":"GitHub Organization", "description":"Home of Atemosta's Open-Source Projects", "url": "https://github.com/Atemosta"},
+  {"title":"Immria: The Monument of Life", "description":"Engrave your name into the metaverse with exclusive Immria NFTs", "url": "https://immria.atemosta.com/monument-of-life/index.html"}
 ]  
